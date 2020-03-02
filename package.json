@@ -6,7 +6,9 @@
   "author": "Ian0714 <54196835+Ian0714@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "prestart": "tsc"
+    "start": "tsc-watch --onSuccess \" node ./dist/index.js\" --compiler %USERPROFILE%\\AppData\\Local\\Yarn\\bin\\tsc"
+  },
+  "devDependencies": {
+    "tsc-watch": "^4.2.3"
   }
 }
